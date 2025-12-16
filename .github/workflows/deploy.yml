@@ -23,5 +23,7 @@ jobs:
           script: |
             cd ~/linux_kurssi
             git pull origin main
+
+            cd cicd
             docker compose pull
             docker compose up -d --build
